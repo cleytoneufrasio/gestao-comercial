@@ -8,17 +8,18 @@ export default function Home() {
     borderRadius: 5,
     textAlign: "center",
     textDecoration: "none",
+    display: "block", // importante para aplicar padding e centralização corretamente
   };
 
   return (
     <div style={{ maxWidth: 600, margin: "auto", padding: 20 }}>
       <h1>Gestão Comercial</h1>
       <nav style={{ display: "flex", flexDirection: "column", gap: 10 }}>
-        <Link href="/clientes" style={linkStyle}>Clientes</Link>
-        <Link href="/produtos" style={linkStyle}>Produtos</Link>
-        <Link href="/vendas" style={linkStyle}>Vendas</Link>
-        <Link href="/contas-a-pagar" style={linkStyle}>Contas a Pagar</Link>
-        <Link href="/fluxo-caixa" style={linkStyle}>Fluxo de Caixa</Link>
+        <Link href="/clientes"><a style={linkStyle}>Clientes</a></Link>
+        <Link href="/produtos"><a style={linkStyle}>Produtos</a></Link>
+        <Link href="/vendas"><a style={linkStyle}>Vendas</a></Link>
+        <Link href="/contas-a-pagar"><a style={linkStyle}>Contas a Pagar</a></Link>
+        <Link href="/fluxo-caixa"><a style={linkStyle}>Fluxo de Caixa</a></Link>
       </nav>
     </div>
   );
